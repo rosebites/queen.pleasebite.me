@@ -5,13 +5,13 @@ import Socials from "./Socials.astro";
 ---
 
 <header class="bg-base-300 p-4 lg:px-12">
-	<nav class="grid grid-cols-3 place-items-center">
-		<h2><a href="/">{SITE_TITLE}</a></h2>
-		<div class="flex gap-8">
+	<nav class="grid grid-cols-1 gap-2 lg:grid-cols-3 place-items-center">
+		<h2 class="text-lg"><a href="/">{SITE_TITLE}</a></h2>
+		<div class="flex gap-8 order-last lg:order-none">
 			<HeaderLink href="/">Home</HeaderLink>
 			<HeaderLink href="/blog">Blog</HeaderLink>
 			<HeaderLink href="/about">About</HeaderLink>
 		</div>
-		<Socials/>
+		<Socials class="max-md:hidden" />
 	</nav>
 </header>
