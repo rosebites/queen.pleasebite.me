@@ -10,11 +10,14 @@
 @theme {
 	--color-base-content: oklch(1 0 89.876);
 	--color-base-100: oklch(0.136 0.016 298.547);
-	--color-base-200: oklch(0.269 0.03 298.697);
-	--color-base-300: oklch(0.346 0.096 293.688);
+	--color-base-200: oklch(0.213 0.039 294.324);
+	--color-base-300: oklch(0.315 0.069 292.642);
 
 	--color-primary-content: oklch(1 0 89.876);
 	--color-primary: oklch(0.574 0.223 24.109);
+
+	--color-secondary-content: oklch(1 0 89.876);
+	--color-secondary: oklch(0.325 0.13 13.937);
 }
 
 @layer utilities {
