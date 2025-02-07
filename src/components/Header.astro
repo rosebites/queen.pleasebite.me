@@ -1,13 +1,18 @@
 ---
-import HeaderLink from './HeaderLink.astro';
-import { SITE_TITLE } from '../consts';
-import Socials from "./Socials.astro";
+import HeaderLink from '@components/HeaderLink.astro';
+import Socials from "@components/Socials.astro";
+import SiteLogo from "@components/SiteLogo.astro";
 ---
 
-<header class="bg-base-300 p-4 lg:px-12">
-	<nav class="grid grid-cols-1 gap-2 lg:grid-cols-3 place-items-center">
-		<h2 class="text-lg"><a href="/">{SITE_TITLE}</a></h2>
-		<div class="flex gap-8 order-last lg:order-none">
+<header class="bg-base-300 lg:px-12">
+	<nav class="grid grid-cols-1 gap-2 lg:grid-cols-3 place-items-center *:p-2">
+		<h2 class="text-lg">
+			<a class="flex gap-2 items-center" href="/">
+				<SiteLogo class="size-8" />
+				Queen please bite me,,,
+			</a>
+		</h2>
+		<div class="flex items-stretch justify-stretch place-self-stretch w-full h-full *:w-full order-last lg:order-none !py-0">
 			<HeaderLink href="/">Home</HeaderLink>
 			<HeaderLink href="/blog">Blog</HeaderLink>
 			<HeaderLink href="/about">About</HeaderLink>

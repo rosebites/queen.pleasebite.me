@@ -1,0 +1,16 @@
+---
+import {Image} from "astro:assets";
+
+import LogoSvg from "@assets/Rose.svg"
+import LogoPng from "@assets/Rose.png"
+import {SITE_TITLE} from "@consts";
+
+const { class: className, ...props } = Astro.props;
+---
+
+<picture>
+    <source srcset={LogoSvg.src} width={LogoSvg.width} height={LogoSvg.height} type="image/xml+svg"  />
+    <Image class:list={[className]} src={LogoPng} alt={SITE_TITLE} />
+</picture>
+
+
