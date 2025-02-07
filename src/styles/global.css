@@ -1,3 +1,5 @@
+@import "@fontsource/fraunces";
+
 @import "tailwindcss";
 @plugin '@tailwindcss/typography';
 
@@ -8,6 +10,8 @@
  */
 
 @theme {
+	--font-fraunces: "Fraunces", serif;
+
 	--color-base-content: oklch(1 0 89.876);
 	--color-base-100: oklch(0.136 0.016 298.547);
 	--color-base-200: oklch(0.213 0.039 294.324);
