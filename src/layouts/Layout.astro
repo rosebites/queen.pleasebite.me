@@ -3,7 +3,8 @@ import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+import {SITE_TITLE} from "@consts";
+const { title = SITE_TITLE, description, pubDate, updatedDate, heroImage } = Astro.props;
 ---
 
 <!doctype html>
