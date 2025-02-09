@@ -14,10 +14,11 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 			{heroImage && <img class="rounded-xl" width={1020} height={510} src={heroImage} alt="" />}
 		</div>
 		<div class:list={[
-				'prose prose-neutral prose-invert max-w-none leading-snug',
-				'md:prose-lg lg:prose-xl',
+				'prose prose-neutral prose-invert mx-auto leading-snug',
+				'md:prose-lg lg:prose-xl text-justify hyphens-auto',
 				'prose-p:text-base-content prose-headings:text-base-content',
 				'prose-h1:text-primary prose-h1:mb-4',
+				'prose-a:text-primary prose-p:leading-snug prose-strong:text-primary',
 				'prose-img:rounded-xl prose-img:mx-auto']}>
 			<div class="text-center">
 				<h1>{title}</h1>
@@ -31,9 +32,10 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 						)
 					}
 				</small>
-				<hr class="border-primary border-2" />
+				<hr class="border-primary border-2 -mx-2 opacity-60" />
 			</div>
 			<slot />
+			<hr class="border-primary border-2 -mx-2 opacity-60" />
 		</div>
 	</article>
 </Layout>
