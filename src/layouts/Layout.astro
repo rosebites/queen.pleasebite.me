@@ -10,7 +10,8 @@ const { title = SITE_TITLE, description, pubDate, updatedDate, heroImage } = Ast
 <!doctype html>
 <html lang="en">
 <head>
-    <BaseHead title={title} description={description} />
+    <BaseHead title={title} description={description} image={heroImage}
+              pubDate={pubDate} updatedDate={updatedDate} />
 </head>
 <body class="flex flex-col text-base-content bg-base-100 min-h-screen font-fraunces">
     <Header />
