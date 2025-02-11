@@ -10,7 +10,7 @@ const { class: className, ...props } = Astro.props;
 
 <picture>
     <source srcset={LogoSvg.src} width={LogoSvg.width} height={LogoSvg.height} type="image/xml+svg"  />
-    <Image class:list={[className]} src={LogoPng} alt={SITE_TITLE} />
+    <Image class:list={[className]} src={LogoPng} alt={SITE_TITLE} loading="eager" />
 </picture>
 
 
